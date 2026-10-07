@@ -24,14 +24,4 @@ class Pages extends BaseController
 
         return view('pages/about', $data);
     }
-	
-	public function profile(int $studentId)
-{
-    $data = [
-        'title'     => 'Student Profile',
-        'studentId' => $studentId,
-    ];
-
-    return view('pages/profile', $data);
-}
 }
